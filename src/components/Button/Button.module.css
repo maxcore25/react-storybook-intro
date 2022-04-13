@@ -1,2 +1,15 @@
 .button {
+  background: var(--accent-clr);
+  outline: none;
+  border: none;
+  padding: 1em 2em;
+  color: var(--txt-clr);
+  border-radius: 1em;
+  /* font-size: 1rem; */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.button:active {
+  transform: scale(0.9);
 }
