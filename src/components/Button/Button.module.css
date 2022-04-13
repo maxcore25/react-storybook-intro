@@ -1,15 +1,33 @@
 .button {
-  background: var(--accent-clr);
   outline: none;
   border: none;
   padding: 1em 2em;
-  color: var(--txt-clr);
   border-radius: 1em;
-  /* font-size: 1rem; */
+
   cursor: pointer;
   transition: transform 0.3s;
 }
 
 .button:active {
   transform: scale(0.9);
+}
+
+/* variants */
+.primary {
+  color: var(--txt-clr);
+  background: var(--accent-clr);
+}
+.square {
+  border-radius: 0;
+}
+.link {
+  background: transparent;
+  color: #aaa;
+}
+
+/* sizes */
+.large {
+  padding: 2em 3em;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
