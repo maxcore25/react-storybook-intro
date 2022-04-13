@@ -8,7 +8,7 @@ export default {
     variant: {
       type: 'string',
       description: 'This is a variant of a Button Component',
-      defaultValue: 'primary',
+      table: { defaultValue: { summary: 'primary' } },
       options: ['primary', 'square', 'link'],
       control: {
         type: 'radio',
@@ -17,7 +17,7 @@ export default {
     size: {
       type: 'string',
       description: 'This is a variant of size of a Button Component',
-      defaultValue: '',
+      table: { defaultValue: { summary: '' } },
       options: ['', 'large'],
       control: {
         type: 'radio',
@@ -26,7 +26,7 @@ export default {
     type: {
       type: 'string',
       description: 'This is a type of a Button Component',
-      defaultValue: 'button',
+      table: { defaultValue: { summary: 'button' } },
       options: ['button', 'submit'],
       control: {
         type: 'radio',
@@ -48,10 +48,14 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Press me',
   variant: 'primary',
+  size: '',
+  type: 'button',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   children: 'This is big',
+  variant: 'primary',
   size: 'large',
+  type: 'button',
 };

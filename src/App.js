@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Button />
+      <Button onClick={() => console.log('hello')} />
     </div>
   );
 }
